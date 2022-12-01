@@ -5,6 +5,9 @@ const styles = StyleSheet.create({
   separator: {
     height: 10,
   },
+  container: {
+    backgroundColor: '#e1e4e8',
+  },
 });
 
 const repositories = [
@@ -63,6 +66,7 @@ const RepositoryList = () => {
 
   return (
     <FlatList
+      style={styles.container}
       data={repositories}
       ItemSeparatorComponent={ItemSeparator}
       // other props
